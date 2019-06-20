@@ -11,6 +11,7 @@ git log --oneline --graph --decorate                               #for show gra
 
 =======================================branching===================================================
 git branch <Name>                                                  #create branch
+git branch -D <branch Name>                                       #delete branch
 git branch                                                         #show branchs
 git checkuot <branch Name>                                         #switch to my branch
 git branch  -D <branch Name>                                       #for delete branch, first checkout to another branch
@@ -27,5 +28,16 @@ git diff <branch A>..<branch B>                                    #What are the
  
  git merge some-thing  --no-ff --message="merge the some ...."     #for merge with one commit in master branch {first checkout in master branch}
   
-
+=======================================git stash==================
  
+git stash save "....message...."                                   #save modify file in stash,when you want to go another branch
+
+git stash list                                                     #for show list of stashes
+
+git stash show -p stash@{id of list in list stash}                 #show discribe of save file in stash   
+
+git stash pop stash@{0}                                            #recover stash file in branch and remove it from stash | apply is for recover and don't remove stash
+
+git stash drop stash@{id of list in list stash}                    #delete stash 
+
+git stash clear                                                    #for clear all of them (stashes)
