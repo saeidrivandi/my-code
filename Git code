@@ -28,7 +28,7 @@ git diff <branch A>..<branch B>                                    #What are the
  
  git merge some-thing  --no-ff --message="merge the some ...."     #for merge with one commit in master branch {first checkout in master branch}
   
-=======================================git stash==================
+=======================================git stash===================================================
  
 git stash save "....message...."                                   #save modify file in stash,when you want to go another branch
 
@@ -41,3 +41,24 @@ git stash pop stash@{0}                                            #recover stas
 git stash drop stash@{id of list in list stash}                    #delete stash 
 
 git stash clear                                                    #for clear all of them (stashes)
+
+================================================git remote =========================================
+git clone <https:// address>                                          #pull clone repo to your system local
+
+git remote -v                                                         #full discribtion of git remote 
+...........result command ...........................
+origin	https://github.com/saeidrivandi/testme.git (fetch)
+origin	https://github.com/saeidrivandi/testme.git (push)
+..........................................................
+
+git push -u origin <new branch name >                                   #creat a new branch in local and push it to remote repository {attention: origin is connected name to remote repository for default[if you don't change it]}
+git branch -a                                                           #show local branch and remote branch
+git  fetch                                                              #for cash new modify remoe repository 
+.........the changes is not show in local branches, you should use the below command for show it...........
+git log --online  origin/master                                         #master or another branch
+
+git merge <remote repository>                                           #set modify from remote repository(origin/master) to local branch
+||
+or
+||
+git pull                                                                #fetch and merg 
