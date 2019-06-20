@@ -8,3 +8,13 @@ git checkout -b <branch Name>                #create and switch to new branch
 
 git branch -m <New name branch{rename}>      #Rename branch name
 git diff <branch A>..<branch B>              #What are their differences?
+ 
+ 
+ ==============================Merging =======================Merging==============================
+ 
+ git merge <branch Name>                                           # for merge New branch to master with fastforward merge {first checkout in master branch}
+ 
+ git merge some-thing  --no-ff --message="merge the some ...."     #for merge with one commit in master branch {first checkout in master branch}
+  
+
+ 
