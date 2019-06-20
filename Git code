@@ -1,0 +1,31 @@
+git log --oneline --graph --decorate                               #for show graphical modify 
+  .............result code.......................
+  0001447 (HEAD -> master) no fast merge
+|\  
+| * 2f5468a (2branch) 2branch add file
+|/  
+* 93c8b87 new branch
+* 0401ac4 insert 2.txt
+* 77fd3eb initial commit
+..................................
+
+=======================================branching===================================================
+git branch <Name>                                                  #create branch
+git branch                                                         #show branchs
+git checkuot <branch Name>                                         #switch to my branch
+git branch  -D <branch Name>                                       #for delete branch, first checkout to another branch
+
+git checkout -b <branch Name>                                      #create and switch to new branch
+
+git branch -m <New name branch{rename}>                            #Rename branch name
+git diff <branch A>..<branch B>                                    #What are their differences?
+ 
+ 
+ ==============================Merging =======================Merging==============================
+ 
+ git merge <branch Name>                                           # for merge New branch to master with fastforward merge {first checkout in master branch}
+ 
+ git merge some-thing  --no-ff --message="merge the some ...."     #for merge with one commit in master branch {first checkout in master branch}
+  
+
+ 
