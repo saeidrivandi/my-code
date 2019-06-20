@@ -1,0 +1,10 @@
+branching
+git branch <Name>                            #create branch
+git branch                                   #show branchs
+git checkuot <branch Name>                   #switch to my branch
+git branch  -D <branch Name>                 #for delete branch, first checkout to another branch
+
+git checkout -b <branch Name>                #create and switch to new branch
+
+git branch -m <New name branch{rename}>      #Rename branch name
+git diff <branch A>..<branch B>              #What are their differences?
