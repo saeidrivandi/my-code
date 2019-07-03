@@ -1,1 +1,2 @@
-https://github.com/saeidrivandi/my-code.git # for vimware error {can not open directory ...}
+# for vimware error {can not open directory ...}
+sudo vmware-modconfig --console --install-all
