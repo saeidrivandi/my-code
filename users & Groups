@@ -1,0 +1,3 @@
+groups <username>                                   #show member of groups for user
+sudo usermod -a -G group username                   # add user to group
+
