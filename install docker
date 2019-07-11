@@ -1,3 +1,8 @@
+============================first way for install docker================================================
+go to this page
+https://get.docker.com/
+sh get-docker.sh
+===================================second way for install docker================================
 # my-code
 #Linux code for my problem &amp; config
 
