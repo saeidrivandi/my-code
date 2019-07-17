@@ -1,7 +1,8 @@
 ============================first way for install docker================================================
 go to this page
 https://get.docker.com/
-sh get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh    #restart os and use next command 
+ sh get-docker.sh                               
 sudo usermod -aG docker <username>        #add user to docker groups
 ===================================second way for install docker================================
 # my-code
@@ -46,4 +47,10 @@ go to below page and copy command for install docker
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-from-a-package
 
 usermod -aG docker $USER &&
+=================================install docker machine===============================================
+base=https://github.com/docker/machine/releases/download/v0.16.0 &&
+>   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+>   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
 
+=============================install docker compose=================================================
+https://github.com/docker/compose/releases
